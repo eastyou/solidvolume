@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solidvolume"
+version = "0.1.0"
+description = "初中数学：立体图形的体积与表面积计算与练习纸生成工具"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["python", "education", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+solidvolume = "solidvolume.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/solidvolume"
+Source = "https://github.com/eastyou/solidvolume"
+
+[tool.setuptools]
+packages = ["solidvolume"]
